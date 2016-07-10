@@ -84,3 +84,7 @@ git push problem - do not use this release
 should have fixed git push problem
 ###0.14
 added link to blog and sample start script
+###0.15
+moved to jessie:latest
+###0.16
+added debug run command to homebridge.sh

@@ -57,4 +57,10 @@ _push() {
   docker push cbrandlehner/homebridge:$VERSION
 }
 
+_debug() {
+  # Run (first time)
+  echo "please go to /root and start run.sh"
+  docker run -ti --entrypoint /bin/bash --net=host -p 51826:51826 -v /etc/homebridge:/root/.homebridge --name $IMAGE_NAME cbrandlehner/homebridge:$VERSION 
+}
+
 eval _$ACTION

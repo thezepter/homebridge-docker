@@ -1,4 +1,5 @@
-FROM nodesource/jessie:5.8.0
+FROM nodesource/jessie
+#FROM nodesource/jessie:5.8.0
 MAINTAINER Christian Brandlehner <christian@brandlehner.at>
 
 ##################################################
@@ -31,6 +32,7 @@ RUN npm install -g homebridge-ninjablock-temperature --unsafe-perm
 RUN npm install -g homebridge-ninjablock-humidity --unsafe-perm
 RUN npm install -g homebridge-ninjablock-alarmstatedevice --unsafe-perm
 RUN npm install -g homebridge-luxtronik2 --unsafe-perm
+RUN npm install -g homebridge-people --unsafe-perm
 #RUN npm install -g homebridge-mqttswitch --unsafe-perm
 #RUN npm install -g homebridge-edomoticz --unsafe-perm
 
